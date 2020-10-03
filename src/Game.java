@@ -84,11 +84,11 @@ public class Game {
     private boolean hasEnd() {
         int eval = board.evaluate();
         if (eval > 0) {
-            System.out.println("X WINS!!!");
+            System.out.println(Game.COMP + " WINS!!!");
             return true;
         }
         if (eval < 0) {
-            System.out.println("O WINS!!!");
+            System.out.println(Game.PLAYER + " WINS!!!");
             return true;
         }
         if (board.isFull()) {
